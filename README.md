@@ -1,6 +1,6 @@
 # Rock Paper Scissors
-minigame
-python
+mini game
+
 
 
 
@@ -8,3 +8,9 @@ Rock, Paper, Scissors Game.
 
 
 made by sina
+
+
+
+programming languages for this mini game
+
+*python
