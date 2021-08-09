@@ -1,4 +1,7 @@
-# RockPaperScissors-minigame-python-sinaonly
+# Rock Paper Scissors
+minigame
+python
+
 
 
 Rock, Paper, Scissors Game.
