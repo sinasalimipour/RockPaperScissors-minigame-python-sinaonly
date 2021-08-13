@@ -67,7 +67,7 @@ import random
 # v.2
 
 
-#listOfStrings = ['Hi' , 'hello', 'at', 'this', 'there', 'from']
+# listOfStrings = ['Hi' , 'hello', 'at', 'this', 'there', 'from']
 #
 # if 'at' in listOfStrings :
 #     print("Yes, 'at' found in List : " , listOfStrings)
@@ -130,7 +130,7 @@ import random
 # choice = str(input("Would you like to play again? y/n\n"))
 # if choice == "y":
 #     clear()
-#     os.system("rockpaperscissors.py")
+#     os.system("main.py")
 
 
 # v.3
@@ -191,7 +191,46 @@ import random
 #
 # if __name__ == "__main__":
 #     play_game()
-#
+
 
 # v.4
 
+# import random
+# import math
+#
+# def play():
+#     user = input("what s your choice  rock , paper ,sicssors\n")
+#     user= user.lower()
+#
+#     computer = random.choice(["rock","paper","sicssors"])
+#     if user== computer:
+#         return (0, user, computer)
+#     if  is_win(user,computer):
+#         return (1, user, computer)
+#     return (-1, user, computer)
+# def is_win(player,opponent):
+#     if (player == "rock" and opponent == "sicssors") or (player == "sicssors" and opponent == "paper") or (player == "paper" and opponent == "rock"):
+#         return True
+#     return False
+# def play_best_of(n):
+#     player_win = 0
+#     computer_win = 0
+#     win_nexessary = math.ceil(n/2)
+#     while player_win < win_nexessary and computer_win < win_nexessary:
+#         result,user,computer = play()
+#         if result == 0:
+#             print("it tie".format(user))
+#         elif result == 1:
+#             player_win +=1
+#             print("you won".format(user, computer))
+#         else:
+#             computer_win += 1
+#             print("you lost".format(user, computer))
+#     if player_win > computer_win:
+#         print("you have win the full game".format(n))
+#     else:
+#         print("you have lost".format(n))
+#
+# if __name__=='__main__':
+#     play_best_of(3)
+#     play_best_of(5)
